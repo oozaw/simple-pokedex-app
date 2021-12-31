@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:background="@drawable/ic_launcher_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/img_pokemon_photo_detail"
+                android:layout_width="297dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                tools:src="@drawable/turtwig" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_pokemon_name_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="2dp"
+            tools:text="Charizard"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/img_pokemon_type_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:layout_gravity="start"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/daun" />
+
+        <TextView
+            style="@style/TextContent.Subtitle"
+            android:layout_marginBottom="8dp"
+            android:text="@string/data" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    style="@style/TextSpec.Field"
+                    android:text="@string/weak" />
+
+                <TextView
+                    android:id="@+id/tv_pokemon_weakness"
+                    style="@style/TextSpec.Value" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    style="@style/TextSpec.Field"
+                    android:text="@string/height" />
+
+                <TextView
+                    android:id="@+id/tv_pokemon_height"
+                    style="@style/TextSpec.Value" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    style="@style/TextSpec.Field"
+                    android:text="@string/category" />
+
+                <TextView
+                    android:id="@+id/tv_pokemon_category"
+                    style="@style/TextSpec.Value" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    style="@style/TextSpec.Field"
+                    android:text="@string/weight" />
+
+                <TextView
+                    android:id="@+id/tv_pokemon_weight"
+                    style="@style/TextSpec.Value" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    style="@style/TextSpec.Field"
+                    android:text="@string/gender" />
+
+                <ImageView
+                    android:id="@+id/img_pokemon_gender"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="start"
+                    android:adjustViewBounds="true"
+                    tools:src="@drawable/gender" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    style="@style/TextSpec.Field"
+                    android:text="@string/evolution" />
+
+            </TableRow>
+
+            <ImageView
+                android:id="@+id/img_poke_evo"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                tools:src="@mipmap/turtwig_evo" />
+
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Pokedex</string>
+    <string name="about">About</string>
+    <string name="detail">Detail Pokemon</string>
+    <string name="list">Daftar Pokemon</string>
+    <string name="data">Data</string>
+    <string name="type">Tipe</string>
+    <string name="weak">Kelemahan</string>
+    <string name="height">Tinggi</string>
+    <string name="category">Kategori</string>
+    <string name="weight">Berat</string>
+    <string name="gender">Jenis Kelamin</string>
+    <string name="evolution">Evolusi</string>
+    <string name="name">Wahyu Purnomo Ady</string>
+    <string name="email">wahyuady17@gmail.com</string>
+    <string name="profile">Profil</string>
+</resources>
